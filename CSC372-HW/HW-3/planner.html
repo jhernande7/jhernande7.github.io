@@ -1,0 +1,80 @@
+<!-- 
+    Name: Jonathan Hernandez-Cardenas
+    Date: 02.18.2-25
+    CSC 372-01
+    
+    This is the html file that houses the meal planner.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="planner-script.js" defer></script>
+    <title>Meal Planner</title>
+</head>
+
+<body>
+    <header>
+        <h1>Create Your Meal Plan</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="planner.html">Meal Plan</a>
+    </nav>
+
+    <main>
+        <section class="menu-selection">
+            <h2>Available Food for Ordering</h2>
+            <ul class="food-list">
+                <li class="dish-item" onclick="addMeal('Smokehouse Burger',15.00)">
+                    <span>Smokehouse Burger</span>
+                    <span>$15.00</span>
+                </li>
+                <li class="dish-item" onclick="addMeal('Baja Salad',12.00)">
+                    <span>Baja Salad</span>
+                    <span>$12.00</span>
+                </li>
+                <li class="dish-item" onclick="addMeal('Blitzen Cocktail',10.00)">
+                    <span>Blitzen Cocktail</span>
+                    <span>$10.00</span>
+                </li>
+                <li class="dish-item" onclick="addMeal('Burrito',15.00)">
+                    <span>Burrito</span>
+                    <span>$15.00</span>
+                </li>
+                <li class="dish-item" onclick="addMeal('Bowls',10.00)">
+                    <span>Bowls</span>
+                    <span>$10.00</span>
+                </li>
+                <li class="dish-item" onclick="addMeal('Quesadillas',12.00)">
+                    <span>Quesadillas</span>
+                    <span>$12.00</span>
+                </li>
+                <li class="dish-item" onclick="addMeal('Wings',15.00)">
+                    <span>Wings</span>
+                    <span>$15.00</span>
+                </li>
+                <li class="dish-item" onclick="addMeal('burger',15.00)">
+                    <span>Burger</span>
+                    <span>$15.00</span>
+                </li>
+                <li class="dish-item" onclick="addMeal('tenders',13.00)">
+                    <span>Tenders</span>
+                    <span>$13.00</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="Food-Cart">
+            <h2>Your Food Cart</h2>
+            <div id="meal-plan"></div>
+            <div class="total">Total: $<span id="total">0.00</span></div>
+        </section>
+    </main>
+</body>
+
+</html>
