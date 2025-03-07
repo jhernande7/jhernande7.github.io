@@ -1,0 +1,103 @@
+/*   Name: Jonathan Hernandez-Cardenas
+    Date: 3.7.2025
+    CSC 372-01
+    
+    This is the css file for the rock, paper, scissors game.
+    This file contains the css for the game. 
+ */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #67e38e;
+    color: #333;
+
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* player selection part */
+.throw-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.throw-selected{
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* .throw-selected:hover{
+    transform: scale(1.1);
+    background-color: rgb(195, 31, 31);
+} */
+.throw-selected img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* computer selection part */
+.computer-throw{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px 0;
+}
+
+/* results section */
+#show-result { 
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#restart {
+    display:block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.selcted-player {
+    border: 2px solid red;
+}
+.selected-computer {
+    border: 2px solid blue;
+
+}
