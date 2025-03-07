@@ -48,7 +48,7 @@ function shuffleComputerThrow() {
     const computerImage = document.getElementById("computer-quesstion");
     const suffleInterval = setInterval(() => {
         const randomChoice = choices[Math.floor(Math.random() * choices.length)];
-        computerImage.src = `imgs/${randomChoice}.png`;
+        computerImage.src = `imgs/${randomChoice}.PNG`;
         computerImage.alt = randomChoice;
     }, 500);
     setTimeout(() => {
@@ -116,7 +116,7 @@ function displayScores() {
 //resets the game
 function resetGame() {
     document.getElementById("result-text").textContent = "";
-    document.getElementById("computer-quesstion").src = "imgs/question-mark.png";
+    document.getElementById("computer-quesstion").src = "imgs/question-mark.PNG";
     document.getElementById("computer-quesstion").alt = "question-mark";
     document.querySelector("#computer-throw .throw-selected p").textContent = "Computer is deciding...";
 
