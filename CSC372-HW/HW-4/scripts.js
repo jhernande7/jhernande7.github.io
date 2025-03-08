@@ -81,7 +81,7 @@ function determineWinner(playerChoice, computerChoice) {
 //displays computer throw
 function displayComputerThrow(computerChoice) {
     const computerImage = document.getElementById("computer-quesstion");
-    computerImage.src = `imgs/${computerChoice}.PNG`;
+    computerImage.src = `imgs/${computerChoice}.png`;
     computerImage.alt = computerChoice;
     document.querySelector("#computer-throw .throw-selected p").textContent = `Computer Chose ${computerChoice}`;
     highlightComputerChoice();
