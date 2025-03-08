@@ -69,7 +69,7 @@ section {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-top: 10px 0;
+    margin-top: 10px ;
 }
 
 /* results section */
@@ -94,7 +94,7 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.selcted-player {
+.selected-player{
     border: 2px solid red;
 }
 .selected-computer {
